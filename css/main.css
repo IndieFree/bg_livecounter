@@ -1,0 +1,31 @@
+body {
+   background: url(../img/bg.webp);
+   background-size: auto;
+}
+
+.selectedMode {
+	/*background-color: red;*/
+	min-width: 80vw;
+	/*min-height: 80vh;*/
+	max-width: 80vw;
+	/*max-height: 80vh;*/
+	border-radius: 10px;
+	margin-top: 10vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mode_1, #mode_2 {
+	border-radius: 10px;
+	background: #3C3D41;
+	color: #00BFFF;
+	min-width: 98%;
+	min-height: 35vh;
+	max-width: 98%;
+	max-height: 49%;
+	margin: 5px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'Playfair Display';
+	box-shadow: 15px 15px 5px rgba(0, 0, 0, .75);
+}
