@@ -15,6 +15,13 @@ body {
 	margin-right: auto;
 }
 
+.soloMode {
+	display: none;
+	min-width: 98vw;
+	min-height: 98vh;
+	/*transform: rotate(180deg);*/
+}
+
 #mode_1, #mode_2 {
 	border-radius: 10px;
 	background: #3C3D41;
@@ -28,4 +35,31 @@ body {
 	font-size: 30px;
 	font-family: 'Playfair Display';
 	box-shadow: 15px 15px 5px rgba(0, 0, 0, .75);
+}
+
+#solo_counter {
+	border-radius: 10px;
+	background: #3C3D41;
+	color: red;
+	min-width: 95vw;
+	/*min-height: 48%;*/
+	max-width: 95vw;
+	/*max-height: 48vh;*/
+	font-size: 50vw;
+}
+
+#solo_minus, #solo_plus {
+	border-radius: 10px;
+	background: #3C3D41;
+	color: #00BFFF;
+	min-width: 48vw;
+	min-height: 48vw;
+	margin-top: 15px;
+	font-size: 20vw; 
+}
+
+.pairMode {
+	display: none;
+	min-width: 98vw;
+	min-height: 98vh;
 }
