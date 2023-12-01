@@ -10,24 +10,35 @@
 <body>
 	<div class="selectedMode" align="center">
 		<button id="mode_1">👤<br>Один игрок</button>
-		<button id="mode_2">👤👤<br>Два игрока</button>
+		<!-- <button id="mode_2">👤👤<br>Два игрока</button> -->
 	</div>
 	<div class="soloMode">
-		<table>
-			<tr>
-				<td colspan="2" id="solo_counter" align="center">00</td>
-			</tr>
-			<tr>
-				<td>
-					<button id="solo_minus">-</button>
-				</td>
-				<td>
-					<button id="solo_plus">+</button>
-				</td>
-			</tr>
-		</table>
+		<div class="countDiv" align="center">0</div>
+		<div class="buttonsDivSolo">
+			<div class="buttonMinus" align="center">-</div>
+			<div class="buttonPlus" align="center">+</div>
+		</div>
+		<div class="menuButtons" align="center">
+			<button id="soloButton_reload">Сброс</button>
+			<button class="backButton">Назад</button>
+		</div>
 	</div>
-	<div class="pairMode"></div>
+	<div class="pairMode">
+		<div class="buttonsDivPair_1">
+			<div class="buttonMinus_1" align="center">-</div>
+			<div class="buttonPlus_1" align="center">+</div>
+		</div>
+		<div class="countDiv_1" align="center">0</div>
+		<div class="countDiv_2" align="center">0</div>
+		<div class="buttonsDivPair_2">
+			<div class="buttonMinus_2" align="center">-</div>
+			<div class="buttonPlus_2" align="center">+</div>
+		</div>
+		<div class="menuButtons" align="center">
+			<button id="pairButton_reload">Сброс</button>
+			<button class="backButton">Назад</button>
+		</div>
+	</div>
 	<script src="./js/main.js"></script>
 </body>
 </html>

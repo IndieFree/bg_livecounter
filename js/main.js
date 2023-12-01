@@ -14,13 +14,45 @@ window.onload = function() {
 		$('.pairMode').show();
 	});
 
-	$('#solo_minus').on('click', function(){
-		hp_1 = (hp_1 - 1);
-		$("#solo_counter").html(hp_1); 
+	$('.backButton').on('click', function(){
+		mode = 1;
+		hp_1 = 0;
+		hp_2 = 0;
+		$(".countDiv").html(hp_1);
+		$(".countDiv_1").html(hp_1);
+		$(".countDiv_2").html(hp_2);
+		$('.soloMode').hide();
+		$('.pairMode').hide();
+		$('.selectedMode').show();
 	});
-	$('#solo_plus').on('click', function(){
+
+	$('#soloButton_reload').on('click', function(){
+		hp_1 = 0;
+		$(".countDiv").html(hp_1);
+	});
+	$('.buttonMinus').on('click', function(){
+		hp_1 = (hp_1 - 1);
+		$(".countDiv").html(hp_1);
+	});
+	$('.buttonPlus').on('click', function(){
 		hp_1 = (hp_1 + 1);
-		$("#solo_counter").html(hp_1); 
+		$(".countDiv").html(hp_1); 
+	});
+
+	$('#pairButton_reload').on('click', function(){
+		hp_1 = 0;
+		hp_2 = 0;
+		$(".countDiv_1").html(hp_1);
+		$(".countDiv_2").html(hp_2);
+	});
+
+	$('.buttonMinus_1').on('click', function(){
+		hp_1 = (hp_1 - 1);
+		$(".countDiv_1").html(hp_1);
+	});
+	$('.buttonPlus_1').on('click', function(){
+		hp_1 = (hp_1 + 1);
+		$(".countDiv_1").html(hp_1);
 	});
 
 };
