@@ -15,10 +15,18 @@ body {
 	margin-right: auto;
 }
 
-.soloMode {
+.soloMode, .pairMode {
 	display: none;
-	min-width: 98vw;
-	min-height: 98vh;
+	background: #3C3D41;
+	min-width: 95vw;
+	max-width: 95vw;
+	min-height: 95vh;
+	max-height: 95vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	border-radius: 10px;
 	/*transform: rotate(180deg);*/
 }
 
@@ -37,29 +45,89 @@ body {
 	box-shadow: 15px 15px 5px rgba(0, 0, 0, .75);
 }
 
-#solo_counter {
-	border-radius: 10px;
-	background: #3C3D41;
-	color: red;
-	min-width: 95vw;
-	/*min-height: 48%;*/
-	max-width: 95vw;
-	/*max-height: 48vh;*/
-	font-size: 50vw;
+.countDiv {
+	font-family: 'Playfair Display';
+	font-size: 40vh;
+	text-shadow: 1px 3px 1px black, 1px 1px 2px red, 0 0 1em red, 0 0 0.2em blue;
+	color: white;
 }
 
-#solo_minus, #solo_plus {
-	border-radius: 10px;
+.menuButtons {
+	float: left;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 3%;
+	max-height: 3%;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#soloButton_reload, .backButton, #pairButton_reload {
 	background: #3C3D41;
 	color: #00BFFF;
-	min-width: 48vw;
-	min-height: 48vw;
-	margin-top: 15px;
-	font-size: 20vw; 
+	box-shadow: 1px 2px 1px black, 1px 1px 2px blue, 0 0 0.2em #00BFFF;
+	margin: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 3vh;
+	border-radius: 10px;
 }
 
-.pairMode {
-	display: none;
-	min-width: 98vw;
-	min-height: 98vh;
+.buttonsDivSolo {
+	min-width: 95%;
+	max-width: 95%;
+	min-height: 95%;
+	max-height: 95%;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.buttonMinus, .buttonPlus {
+	float: left;
+	background: #3C3D41;
+	color: #00BFFF;
+	border-radius: 30px;
+	box-shadow: 1px 2px 1px black, 1px 1px 2px blue, 0 0 0.2em #00BFFF;
+	min-width: 44%;
+	max-width: 44%;
+	margin-left: 3%;
+	min-height: 45%;
+	font-size: 20vh;
+}
+
+.buttonsDivPair_1 {
+	min-width: 95%;
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.buttonMinus_1, .buttonPlus_1, .buttonMinus_2, .buttonPlus_2 {
+	float: left;
+	background: #3C3D41;
+	color: #00BFFF;
+	border-radius: 30px;
+	box-shadow: 1px 2px 1px black, 1px 1px 2px blue, 0 0 0.2em #00BFFF;
+	min-width: 40%;
+	max-width: 40%;
+	margin-left: 7%;
+	margin-top: 2%;
+	min-height: 25%;
+	font-size: 15vh;
+}
+
+.countDiv_1, .countDiv_2 {
+	font-family: 'Playfair Display';
+	font-size: 20vh;
+	color: white;
+}
+
+.countDiv_1 {
+	text-shadow: 1px 3px 1px black, 1px 1px 2px red, 0 0 1em red, 0 0 0.2em blue;
+}
+
+.countDiv_2 {
+	text-shadow: 1px 3px 1px black, 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
 }
